@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Demo</title>
+    <style>
+        a.test1 {
+            font-weight: bold;
+        }
+
+        a.test2{
+            color: red;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+<a href="http://jquery.com/">jQuery</a>
+<script src="jquery-2.1.4.js"></script>
+<script>
+    // Your code goes here.
+    $('a').addClass('test1');
+    $('a').addClass('test2');
+
+    window.onload = function () {
+        alert("welcome");
+    };
+    $(document).ready(function(){
+        $('a').click(function (event) {
+            alert("this will no longer take you to jqery!");
+            event.preventDefault();
+        });
+    });
+</script>
+</body>
+</html>
