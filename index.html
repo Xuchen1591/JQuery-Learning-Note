@@ -13,9 +13,20 @@
             font-size: 30px;
         }
     </style>
+
+    <script>
+        $( "h1" ).html( "hello world" );
+        $( "<p>This is a new paragraph</p>" );
+        $( "<li class=\"new\">new list item</li>" );
+    </script>
+
 </head>
 <body>
 <a href="http://jquery.com/">jQuery</a>
+<h1>h w</h1>
+<div id="myDiv">
+    <p id="first">23333</p>
+</div>
 <script src="JS/jquery-2.1.4.js"></script>
 <script>
     // Your code goes here.
@@ -51,6 +62,7 @@
     //or pass a named function to $( document ).ready()
 
 
+
     //section 2: Avoiding Conflicts with Other Libraries
     //by default, jQuery uses $ as a shortcut for jQuery
     var $j = jQuery.noConflict();
@@ -59,6 +71,7 @@
     $j(document).ready(function() {
         $j( "div" ).hide();
     });
+
 
 
     //section 3: attributes
@@ -74,7 +87,24 @@
     // Returns the href for the first a element in the document
 
 
-    
+
+    //section 4: selecting element
+    $( "#myId" );
+    $(".myClass");  //Selecting Elements by Class Name
+    $( "#contents ul.people li" );  //electing Elements by Compound CSS Selector
+
+
+
+    //section 5: selection
+    // The .html() method sets all the h1 elements' html to be "hello world":
+    $( "h1" ).html( "hello world" );
+
+    // The .html() method returns the html of the first h1 element:
+    $( "h1" ).html();
+    // > "hello world"
+
+    // Changing the HTML of an element.
+    $( "#myDiv p:first" ).html( "New <strong>first</strong> paragraph!" );
 </script>
 </body>
 </html>
