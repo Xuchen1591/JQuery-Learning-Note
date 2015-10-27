@@ -3,6 +3,7 @@
 <head>
     <script src="JS/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="JS/maginaJQHTML.js"></script>
+    <link rel="stylesheet" href="CSS/maginaCSS.css">
 </head>
 <body>
 <p id="test">this is a paragraph with <b>strong</b> text.</p>
@@ -22,5 +23,41 @@
 <button id="btn5">set text()</button>
 <button id="btn6">set HTML()</button>
 <button id="btn7">set val()</button>
+
+<br>
+<p class="pAdd">This is a paragraph.</p>
+<p class="pAdd">This is another paragraph.</p>
+<ol id="lAdd">
+    <li>List item 1</li>
+    <li>List item 2</li>
+    <li>List item 3</li>
+</ol>
+<button id="addText">add text</button>
+<button id="addList">add list item</button>
+
+<br>
+<p id="img">this is a leader:</p>
+<br>
+<button onclick="afterText()">add DOM item</button>
+
+
+<br>
+<div id="waitForRemove" style="height:100px;width:300px;border:1px solid black;background-color:yellow;">
+    This is some text in the div.
+    <p>This is a paragraph in the div.</p>
+    <p>This is another paragraph in the div.</p>
+</div>
+<button id="remove">remove DIV</button>
+<button id="empty">empty DIV</button>
+
+
+<br>
+<h1 class="addClass">标题 1</h1>
+<h2 class="addClass">标题 2</h2>
+<p class="addClass">这是一个段落。</p>
+<p class="addClass">这是另一个段落。</p>
+<div id="addB">这是非常重要的文本！</div>
+<br>
+<button id="addClass">向元素添加类</button>
 </body>
 </html>
