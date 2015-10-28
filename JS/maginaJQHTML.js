@@ -83,6 +83,21 @@ $(document).ready(function(){
     //parent()      返回被选元素的直接父元素
     //parents()     返回被选元素的所有祖先元素，它一路向上直到文档的根元素 (<html>)
     //parentsUntil()        返回介于两个给定元素之间的所有祖先元素
+
+    //children()        返回被选元素的所有直接子元素
+    //find()        返回被选元素的后代元素，一路向下直到最后一个后代
+
+    //siblings()        返回被选元素的所有同胞元素
+    //next()        返回被选元素的下一个同胞元素
+    //nextAll()     返回被选元素的所有跟随的同胞元素
+    //nextUntil()       返回介于两个给定参数之间的所有跟随的同胞元素
+    //prev()
+    //prevAll()
+    //prevUntil()
+
+    //first()
+    //last()
+    //eq()      //指定位置元素   
 });
 
 
