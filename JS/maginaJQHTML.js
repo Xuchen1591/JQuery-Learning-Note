@@ -97,7 +97,11 @@ $(document).ready(function(){
 
     //first()
     //last()
-    //eq()      //指定位置元素   
+    //eq()      //指定位置元素
+
+
+    //jQuery no comfilict
+    //$.noConflict()
 });
 
 
