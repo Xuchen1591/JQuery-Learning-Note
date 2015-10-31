@@ -1,0 +1,81 @@
+div#border-radius{
+    text-align:center;
+    border:2px solid #a1a1a1;
+    padding:10px 40px;
+    background:#dddddd;
+    width:350px;
+    border-radius:25px;
+    -moz-border-radius:25px; /* 老的 Firefox */
+}
+
+div#border-shadow{
+    width:300px;
+    height:100px;
+    background-color:#ff9900;
+    -moz-box-shadow: 10px 10px 5px #888888; /* 老的 Firefox */
+    box-shadow: 10px 10px 5px #888888;
+}
+
+h1{
+    text-shadow: 5px 5px 5px #FF0000;
+}
+
+div#hover{
+    width:100px;
+    height:100px;
+    background:yellow;
+    transition:width 2s;
+    -moz-transition:width 2s; /* Firefox 4 */
+    -webkit-transition:width 2s; /* Safari and Chrome */
+    -o-transition:width 2s; /* Opera */
+}
+
+div:hover{
+    width:300px;
+}
+
+/*
+hanging-punctuation	    规定标点字符是否位于线框之外。	3
+punctuation-trim	    规定是否对标点字符进行修剪。	3
+text-align-last	        设置如何对齐最后一行或紧挨着强制换行符之前的行。	3
+text-emphasis	        向元素的文本应用重点标记以及重点标记的前景色。	3
+text-justify	        规定当 text-align 设置为 "justify" 时所使用的对齐方法。	3
+text-outline	        规定文本的轮廓。	3
+text-overflow	        规定当文本溢出包含元素时发生的事情。	3
+text-shadow	            向文本添加阴影。	3
+text-wrap	            规定文本的换行规则。	3
+word-break	            规定非中日韩文本的换行规则。	3
+word-wrap	            允许对长的不可分割的单词进行分割并换行到下一行。	3
+*/
+
+/*
+font-family	name	    必需。规定字体的名称。
+src	URL	                必需。定义字体文件的 URL。
+font-stretch
+        normal
+        condensed
+        ultra-condensed
+        extra-condensed
+        semi-condensed
+        expanded
+        semi-expanded
+        extra-expanded
+        ultra-expanded
+font-style
+        ormal
+        italic
+        oblique
+font-weight
+        normal
+        bold
+        100
+        200
+        300
+        400
+        500
+        600
+        700
+        800
+        900
+unicode-range	unicode-range	可选。定义字体支持的 UNICODE 字符范围。默认是 "U+0-10FFFF"。
+*/
